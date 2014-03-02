@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  batch: MyString
+  expireDate: 2014-03-02
+  name: MyString
+  presentation: MyString
+  count: 1
+  type: 
+
+two:
+  batch: MyString
+  expireDate: 2014-03-02
+  name: MyString
+  presentation: MyString
+  count: 1
+  type: 
