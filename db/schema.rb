@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140302085036) do
+ActiveRecord::Schema.define(version: 20140303061558) do
+
+  create_table "doctors", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "products", force: true do |t|
     t.string   "batch"
@@ -20,6 +26,12 @@ ActiveRecord::Schema.define(version: 20140302085036) do
     t.string   "presentation"
     t.integer  "count"
     t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "visitors", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
