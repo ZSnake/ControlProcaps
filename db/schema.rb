@@ -11,12 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140303061558) do
+ActiveRecord::Schema.define(version: 20140323150719) do
 
   create_table "doctors", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "doctors_products", id: false, force: true do |t|
+    t.integer "doctor_id"
+    t.integer "product_id"
   end
 
   create_table "products", force: true do |t|
@@ -28,6 +33,11 @@ ActiveRecord::Schema.define(version: 20140303061558) do
     t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "products_visitors", id: false, force: true do |t|
+    t.integer "product_id"
+    t.integer "visitor_id"
   end
 
   create_table "visitors", force: true do |t|

@@ -5,9 +5,19 @@
   <%= f.input :presentation %>
   <%= f.input :count %>
   <%= f.input :type %>
+  
+  <%=f.simple_fields_for @doctor do |dr| %>
+    <%= dr.input :name%>
+  <%end%>
+  
+  <%=f.simple_fields_for @visitor do |v| %>
+    <%= v.input :name%>
+  <%end%>
+  
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                 products_path, :class => 'btn' %>
   </div>
+  
 <% end %>
