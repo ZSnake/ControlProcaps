@@ -1,0 +1,14 @@
+<dl class="dl-horizontal">
+  <dt><strong>Batch:</strong></dt>
+  <dd><%= product.batch %></dd>
+  <dt><strong>Expire Date:</strong></dt>
+  <dd><%= product.expireDate %></dd>
+  <dt><strong>Name:</strong></dt>
+  <dd><%= product.name %></dd>
+  <dt><strong>Presentation:</strong></dt>
+  <dd><%= product.presentation %></dd>
+  <dt><strong>Count:</strong></dt>
+  <dd><%= product.count %></dd>
+  <dt><strong>Type:</strong></dt>
+  <dd><%= product.type %></dd>
+</dl>

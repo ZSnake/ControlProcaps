@@ -7,11 +7,8 @@ class CreateProducts < ActiveRecord::Migration
       t.string :presentation
       t.integer :count
       t.string :type
-      t.references :doctor
 
       t.timestamps
     end
-
-    add_index :products, :doctor_id
   end
 end

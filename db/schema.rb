@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20140323150719) do
 
   create_table "doctors", force: true do |t|
     t.string   "name"
+    t.string   "clinic"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -31,9 +32,12 @@ ActiveRecord::Schema.define(version: 20140323150719) do
     t.string   "presentation"
     t.integer  "count"
     t.string   "type"
+    t.integer  "doctor_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "products", ["doctor_id"], name: "index_products_on_doctor_id"
 
   create_table "products_visitors", id: false, force: true do |t|
     t.integer "product_id"

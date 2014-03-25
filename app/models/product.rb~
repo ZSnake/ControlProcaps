@@ -4,5 +4,5 @@ class Product < ActiveRecord::Base
   belongs_to :doctor
   has_and_belongs_to_many :visitors
   
-  #accepts_nested_attributes_for :doctors, :visitors
+  accepts_nested_attributes_for :doctors, :visitors
 end

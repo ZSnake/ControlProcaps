@@ -31,7 +31,7 @@ class ProductsController < ApplicationController
     #@product = Product.new(product_params)
     #@doctor = @product.build_doctor
     #@visitor = @product.build_visitor
-    redirect_to doctor_path(@doctor)
+    redirect_to product_path(@doctor)
     
     #respond_to do |format|
     #  if @product.save
